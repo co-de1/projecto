@@ -1,0 +1,136 @@
+/* main color #6666ff*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+    box-sizing: border-box;    
+    color: #777;
+}
+
+input, button{
+    outline: none;
+}
+
+ul{
+    list-style: none;       
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #eee;
+}
+header{
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /*Sombra*/
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999; /*Sobre todos os elementos*/
+}
+
+header nav ul li{
+    float: left; /*Posição absoluta*/
+    margin-left: 20px;    
+}
+
+header nav ul li a{
+    color: #111;
+    font-weight: bold; /*Negrito*/
+    transition: .5s ease;
+}
+
+header nav ul li a:hover {    
+    color: #6666ff;
+}
+
+header nav ul li:first-child a{
+    color: #6666ff;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+main section.container{
+    width: 100%;
+    height: 400px;
+    background-color: #6666ff;
+    position: relative;    
+}
+
+main section.container section.form{
+    width: 55%;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, .3);
+    border-radius: 35px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.container section.form h1{
+    font-size: 30px;
+    color: #6666ff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+main section.container section.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+main section.container section.form form span{
+    color: #ccc;    
+}
+
+main section.container section.form form input{
+    border: none; 
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+
+main section.container section.form form button{
+    border: none; 
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #6666ff;
+    color: white;
+    margin-bottom: 30px;
+}
+
+main section.container section.form form div{
+    display: flex;
+    justify-content: space-between;
+    color: #6666ff;
+}
+
+main section.container section.form form div span a{
+    color: #6666ff;
+}
+footer{
+    background-color: #6666ff;
+}
+footer .item{
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+    width: auto;
+    height: 30px;
+}
+footer .item p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+}
